@@ -13,15 +13,31 @@
 
   <body>
     <p>红色</p>
-
+    <style>
+     body>p:nth-child(1){
+       color: red;
+       
+     }
+    </style>
     <p class="a" tabindex="-1">鼠标悬浮时为红色，按下去时为绿色，获得焦点时为蓝色</p>
-
+    
     <p class="a c">
       <span>
         红色
         <span>绿色</span>
         <span>蓝色</span>
       </span>
+      <style>
+        p>span:nth-child(1){
+          color: red;
+        }
+        p>span>span:nth-child(1){
+          color: green;
+        }
+        p>span>span:last-child{
+          color:blue;
+        }
+      </style>
     </p>
     <style>
  a:visited{
