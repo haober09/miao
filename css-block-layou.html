@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p>hello world 请调整浏览器窗口大小查看效果</p>
+    </header>
+    <section>
+    <p>页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px</p>
+    
+    <div class="a">宽180高40(包含边框)</div> 
+    <div class="a">产品</div>
+    <div class="a">产品</div>
+    <div class="a">水平间隙30px</div>
+    <div class="a">产品</div>
+    <div class="a">产品</div>
+    <div class="a">垂直间隙15px</div>
+    <div class="a">产品</div>
+    <div class="a">产品</div>
+    <div class="a">边框宽度3px</div>
+    <div class="a">产品</div>
+    <div class="a">产品</div>
+
+    <div  class="b">link</div>
+    <div  class="b">link</div>
+    <div  class="b">link</div>
+    <div  class="b">link</div>
+    <div  class="b">link</div>
+</section>
+<footer>
+    <div class="footer">©版权所有<br>
+
+            本页所有布局均使用块元素</div>
+</footer>
+    <style>
+        /*头部 */
+        header{background-color:black;
+
+        }
+         header>p{
+            color:white;
+            margin: auto;
+            width: 600px;
+        }
+        /*中间 */
+         section{
+        width:600px;
+        margin: 15px auto;
+    }
+    section>div.a{
+        border: 3px solid;
+        width: 174px;
+        height: 34px;
+        background-color: pink;
+        text-align: center;
+        line-height: 34px;
+        margin-bottom: 15px;
+
+    }
+    section>div.a:hover{
+        background-color: red;
+    }
+    div.a:nth-of-type(3n+1){
+        margin-top: auto;
+        margin-left:0px; 
+        
+    }
+    div.a:nth-of-type(3n+2){
+        margin-top: -54px;
+        margin-left:210px;
+        
+    }
+    div.a:nth-of-type(3n+34){
+        margin-top: -54px;
+        margin-left:420px;
+
+    }
+/* link */   
+    div.b{
+width:100%;
+height:auto;
+margin-left: 0px;
+border-bottom:1px dotted;}
+
+/*底部 */
+footer{
+    background-color: plum;
+}
+div.footer{
+    border:hidden;
+    text-align:center;
+    height: auto;
+}
+
+    </style>
+</body>
+</html>
