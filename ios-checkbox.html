@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<style>
+* {
+  background-color: rgba(0,0,0,0.08);
+}
+input {
+  display:none; /*隐藏input框框*/
+}
+
+input + label.cheek{
+  display:inline-block; /*设置ios椭圆外边框*/
+  cursor:pointer;
+  width: 400px;
+  height: 200px;
+  border-radius:160px;
+  position:relative;
+  background-color:grey;
+  transition: 0.5s;
+  /* box-shadow:inset 0 0 0px 0px #6edd5e */
+  
+}
+label.push-botton{
+  display:block;   /*设置ios白色圆形按钮*/
+  cursor:pointer;
+  width: 180px;
+  height: 180px;
+  border-radius:160px;
+  position:absolute;
+  left:3%;
+  top:10px;
+  background-color:white;
+  transition: 0.5s;
+}
+
+input:checked +label.cheek { 
+  cursor:pointer; /*设置按动后外边框内变绿色*/
+  width: 400px;
+  height: 200px;
+  xborder: 8px solid;
+  border-radius:160px;
+  position:relative;
+  background-color:rgb(110,221,94);
+  /* box-shadow:inset 0 0 100px 100px #6edd5e; */
+}
+input:checked +label>label{
+  opacity: 1;  /*设置按动后白色按钮滚动到右边，label处于父子元素的子元素要用>击中*/
+  cursor:pointer;
+  width: 180px;
+  height: 180px;
+  border-radius:160px;
+  position:absolute;
+  left:45%;
+  top:10px;
+  background-color:white;
+}
+</style>
+<body>
+  <input type="checkbox" name="" id="ios">
+  <label class="cheek" for="ios">
+     <label class="push-botton" for="ios"></label>
+  </label>
+  
+</body>
+</html>
