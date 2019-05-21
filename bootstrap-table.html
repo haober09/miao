@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+  *, ::after, ::before {
+   box-sizing: border-box;
+}
+
+.table {
+   xborder: 2px solid grey;
+   width: 100%;
+   box-sizing: border-box;
+   vertical-align: middle;
+
+}
+table {
+  border-collapse:collapse;
+
+}
+
+th {
+  text-align:inherit;
+}
+
+.table th,.table td {
+  padding:.75rem;
+  vertical-align:top;
+  border-top:2px solid #dee2e6;
+
+}
+
+thead th{
+  vertical-align:bottom;
+  border-bottom: 3px solid #dee2e6;
+
+}
+
+.table-dark {
+  color: #fff;
+  background-color: #343a40;
+}
+
+table .thead-dark {
+  color: #fff;
+  background-color: #343a40;
+}
+
+.table-striped tbody>tr:nth-child(2n+1){
+  background-color:rgb(242,242,242);
+}
+.table-bordered td,.table-bordered th{
+  border:1px solid #dee2e6;
+}
+.table-borderless th,.table-borderless td{
+  border:0;
+}
+.table-hover tbody tr:hover{
+  background-color:rgb(236,236,236);
+}
+.table-sm {
+  width:50%;
+}
+
+  </style>
+</head>
+<body>
+      <table class="table table-dark">
+         <thead>
+            <tr>
+               <th scope="col">#</th>
+               <th scope="col">第一</th>
+               <th scope="col">持续</th>
+               <th scope="col">处理</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <th scope="row">1</th>
+               <td>玫瑰油</td>
+               <td>hello</td>
+               <td>你好</td>
+            </tr>
+            <tr>
+               <th scope="row">2</th>
+               <td>2</td>
+               <td>3</td>
+               <td>4</td>
+            </tr>
+            <tr>
+               <th scope="row">3</th>
+               <td>2</td>
+               <td>3</td>
+               <td>4</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+  </body>
+</html>
