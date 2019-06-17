@@ -1,0 +1,501 @@
+<script type="x" id="ch0103/18">
+  var a1 = +prompt("请输入a1的值:");
+  var a2 = +prompt("请输入a2的值:");
+  var n  = +prompt("请输入n的值:");
+  var f =a1 + (n - 1) * (a2 - a1);
+  console.log(f);
+</script>
+
+<script type="x" id="/ch0103/16">
+  var Xa = +prompt("请输入Xa的值:");
+  var Ya = +prompt("请输入Ya的值:");
+  var Xb = +prompt("请输入Xb的值:");
+  var Yb = +prompt("请输入Yb的值:");
+  var c,d,distance;
+  if (Xa>=Xb){
+    c = Xa-Xb;
+
+  }
+  else {
+    c = Xb-Xa;
+  }
+  if (Ya>=Yb){
+    d = Ya-Yb;
+
+  }
+  else {
+    d = Yb-Ya;
+  }
+  distance =Math.sqrt(c*c+d*d);
+  console.log(distance);
+</script>
+
+<script type="x" id="ch0103/13/">
+  debugger
+  var n = +prompt("请输入三位数n的值:");
+  var a,b,c,number;
+  a = Math.trunc(n/100);
+  b = Math.trunc(n/10%10);
+  c = Math.trunc(n%10);
+  if(c!=0)
+    {
+    number = c*100 + b*10 + a;
+    }
+  else{
+    number = '0' + (b*10 + a);
+    }
+  console.log(number);
+</script>
+
+<script type="x"id="ch0103/19">
+  var A = +prompt("请输入A的值:");
+  var B = +prompt("请输入B的值:");
+  var c;
+  c=A*B;
+  console.log(c);
+</script>
+
+<script type="x" id="ch0103/20">
+  var n = +prompt("请输入一个整数n,0 <= n < 31:");
+  var number;
+  number = 2**n;
+  console.log(number);
+</script>
+
+<script type="x" id="ch0103/01">
+  var a = +prompt("请输入A的值:");
+  var b = +prompt("请输入B的值:");
+  var c = a + b;
+  console.log(c);
+</script>
+
+<script type="x" id="ch0103/02">
+  var a = +prompt("请输入a的值:");
+  var b = +prompt("请输入b的值:");
+  var number = (a+b)*c;
+  console.log(number);
+</script>
+
+<script type="x" id="ch0103/03">
+  var a = +prompt("请输入a的值:");
+  var b = +prompt("请输入b的值:");
+  var c = +prompt("请输入c的值:");
+  var number = Math.trunc((a+b)/c);
+  console.log(number);
+
+</script>
+
+<script type="x" id="ch0103/04">
+debugger
+  var a = +prompt("请输入a的值:");
+  var b = +prompt("请输入b的值:");
+  var quotient = a/b;
+  var mo = a%b;
+if(b==0){
+    quotient=null;
+    mo=null;
+  }
+  console.log(quotient);
+  console.log(mo);
+
+</script>
+
+<script type="x" id="ch0103/05">
+  debugger
+    var a = +prompt("请输入a的值:");
+    var b = +prompt("请输入b的值:");
+    var quotient = a/b;
+  if(b==0){
+      quotient=null;
+    }
+    console.log(quotient);
+
+  </script>
+
+  <script type="x" id="ch0103/05">
+      var a = +prompt("请输入a的值:");
+      var b = +prompt("请输入b的值:");
+      var quotient = a/b;
+    if(b==0){
+        quotient=null;
+      }
+      console.log(quotient);
+
+    </script>
+
+    <script type="x" id="ch0103/06">
+        var a = +prompt("请输入a的值:");
+        var b = +prompt("请输入b的值:");
+        var quotient = Number(b/a*100).toFixed(3);
+        quotient+="%";
+      if(b==0){
+          quotient=null;
+        }
+        console.log(quotient);
+      </script>
+
+      <script type="x" id="ch0103/07">
+        var a = +prompt("请输入a的值:");
+        var b = +prompt("请输入b的值:");
+        var c = +prompt("请输入c的值:");
+        var d = +prompt("请输入d的值:");
+        var x = +prompt("请输入x的值:");
+        var f = a*(x**3)+b*(x**2)+c*x+d;
+        console.log(f);
+      </script>
+
+      <script type="x" id="ch0103/08">
+        var f = +prompt("请输入f的值:");
+        var c = 5* (f-32)/9.toFixed(5);
+        console.log(c);
+      </script>
+
+      <script type="x" id="ch0103/09">
+        var r = +prompt("请输入r的值:");
+        var pi = 3.14159;
+        var d = (2*r).toFixed(4);
+        var circumference = d*pi.toFixed(4);
+        var area = (pi*r*r).toFixed(4);
+        console.log(d);
+        console.log(circumference);
+        console.log(area);
+      </script>
+
+      <script type="x" id="ch0103/10">
+      debugger
+        var r1 = +prompt("请输入r1的值:");
+        var r2 = +prompt("请输入r2的值:");
+        var R = (1/(1/r1 + 1/r2)).toFixed(2);
+        console.log(R);
+      </script>
+
+<script type="x" id="ch0103/11">
+    var a = +prompt("请输入a的值:");
+    var b = +prompt("请输入b的值:");
+    var mo = a%b;
+    console.log(mo);
+  </script>
+
+<script type="x" id="ch0103/12">
+  var r = +prompt("请输入r的值:");
+  var V = (4/3*3.14*r*r*r).toFixed(2);
+  console.log(V);
+</script>
+
+<script type="x" id="ch0103/14">
+debugger
+  var r = +prompt("请输入r的值:");
+  var h = +prompt("请输入h的值:");
+  var pi = 3.14159;
+  var v = (pi*h*r*r);
+  var time =Math.ceil(20000/v);
+  console.log(time);
+</script>
+
+
+<script type="x" id="ch0103/15">
+    var n = +prompt("请输入n的值:");
+    var x = +prompt("请输入x的值:");
+    var y = +prompt("请输入y的值:");
+    var eat = Math.ceil(y/x);
+    var s = n-eat;
+    console.log(s);
+  </script>
+
+  <script type="x" id="ch0103/17">
+      var x1 = +prompt("请输入x1的值:");
+      var y1 = +prompt("请输入y1的值:");
+      var x2 = +prompt("请输入x2的值:");
+      var y2 = +prompt("请输入y2的值:");
+      var x3 = +prompt("请输入x3的值:");
+      var y3 = +prompt("请输入y3的值:");
+      var a = Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+      var b = Math.sqrt((x3-x2)*(x3-x2)+(y3-y2)*(y3-y2));
+      var c = Math.sqrt((x3-x1)*(x3-x1)+(y3-y1)*(y3-y1));
+      var p = (a+b+c)/2;
+      var area = (Math.sqrt(p*(p-b)*(p-a)*(p-c))).toFixed(2);
+      console.log(area);
+    </script>
+
+<script type="x" id="ch0104/01/">
+var N = +prompt("请输入N的值:");
+if(N>0){
+  console.log("positive");
+}
+else if(N==0){
+  console.log("zero");
+}
+     else {
+       console.log("negative")
+     }
+</script>
+
+<script type="x" id="ch0104/02/">
+
+var N = + prompt("输入一个浮点数:");
+if(N>0){
+  console.log(N);
+}
+else {
+  N=(-N).toFixed(2);
+  console.log(N)
+}
+</script>
+
+<script type="x" id="ch0104/03/">
+  var N = + prompt("请输入N的值:");
+  if(N%2==0){
+    console.log("even");
+  }
+  else {
+    console.log("odd");
+  }
+</script>
+
+<script  type="x" id="ch0104/04/">
+debugger
+var N = + prompt("请输入一个字符:");
+if(N%2!=0){
+  console.log("Yes");
+}
+else{
+  console.log("No");
+}
+</script>
+
+<script type="x" id="ch0104/05/">
+debugger
+var x = + prompt("请输入x的值:");
+var y = + prompt("请输入y的值:");
+if(x>y){
+  console.log(">");
+}
+else if(x==y){
+  console.log("=");
+}
+    else{
+    console.log("<");
+    }
+</script>
+
+<script type="x" id="ch0104/06/">
+debugger
+var N = + prompt("请输入N的值:");
+if(N>=10&&N<=99){
+  console.log("1");
+}
+else{
+  console.log("0");
+}
+</script>
+
+<script type="x" id="ch0104/07/">
+var lucky = + prompt("请输入lucky的值:");
+var encourage = + prompt("请输入encourage的值:");
+if(lucky>=10||encourage>=20){
+  console.log("1");
+}
+else{
+  console.log("0");
+}
+</script>
+
+<script type="x" id="ch0104/08/">
+  var n = + prompt("请输入n的值:");
+  if(n%3==0&&n%5==0){
+    console.log("Yes");
+  }
+  else{
+    console.log("No");
+  }
+  </script>
+
+<script type="x" id="ch0104/09/">
+  var n = + prompt("请输入n的值:");
+  if(n%3==0&&n%5==0&&n%7==0){
+    console.log("3,5,7");
+  }
+  else if(n%3==0&&n%5==0){
+    console.log("3,5");
+  }
+       else if(n%3==0&&n%7==0){
+            console.log("3,7");
+            }
+            else if(n%5==0&&n%7==0){
+                 console.log("5,7");
+                 }
+                 else if(n%3==0){
+                      console.log("3");
+                      }
+                      else if(n%5==0){
+                        console.log("5")  ;
+                           }
+                           else if(n%7==0){
+                            console.log("7")
+                                }
+                                else {
+                                  console.log("n")
+                                }
+  </script>
+
+<script type="x" id="ch0104/10/">
+var chinese = + prompt("请输入语文成绩:");
+var math = + prompt("请输入数学成绩:");
+if((chinese<60&&math>=60)||(math<60&&chinese>=60)){
+  console.log("1");
+}
+else {
+  console.log("0");
+}
+</script>
+
+<script type="x" id="ch0104/11/">
+var date = + prompt("请输入日期:");
+if(date==1||date==3||date==5){
+  console.log("NO");
+}
+else {
+  console.log("YES");
+}
+</script>
+
+<script type="x" id="ch0104/12/">
+var distance = + prompt("请输入路程:");
+var walk = Number(distance/1.2);
+var bike = Number(distance/3+50);
+if(walk>bike){
+  console.log("Bike");
+}
+else if(walk==bike){
+  console.log("All");
+}
+     else console.log("Walk");
+</script>
+
+<script type="x" id="ch0104/13/">
+var n = + prompt("请输入一个浮点数n:");
+if(n>=0&&n<5){
+  y=(-n+2.5).toFixed(3);
+}
+else if(n>=5&&n<10){
+  y=(2-1.5*(n-3)*(n-3)).toFixed(3);
+     }
+     else y=(n/2-1.5).toFixed(3);
+     console.log(n);
+</script>
+
+<script type="x" id="ch0104/14/">
+var height = + prompt("请输入重量:");
+var n = + prompt("请输入一个浮点数n:");
+var money;
+var y="y";
+if(height<=1000){
+   money = 8;
+}
+else money = 8 + Number((height-1000)/500);
+if (n===y) {
+  money = money + 5;
+}
+console.log(money);
+</script>
+
+<script type="x" id="ch0104/15/">
+var n1 = + prompt("请输入一个数值:");
+var n2 = + prompt("请输入一个数值:");
+var n3 = + prompt("请输入一个数值:");
+var a;
+if(n1>=n2){
+   a=n1;
+}
+else {
+  a=n2;
+}
+if(n3>=a){
+  a=n3;
+}
+console.log(a);
+</script>
+
+<script type="x" id="ch0104/16/">
+  var n1 = + prompt("请输入三角形第一条边:");
+  var n2 = + prompt("请输入三角形第二条边:");
+  var n3 = + prompt("请输入三角形第三条边:");
+  if(n1+n2>n3&&n1-n2<n3||n2+n3>n1&&n2-n3<n1||n1+n3>n2&&n1-n3<n2){
+    console.log("yes");
+  }
+  else console.log("no");
+</script>
+
+<script type="x" id="ch0104/17/">
+  var n = + prompt("请输入年份:");
+  if((n%4==0&&n%100==0||n%4==0&&n%100!=0)&&(n%3200!=0)){
+    console.log("Y");
+  }
+  else console.log("N");
+</script>
+
+<script type="x" id="ch0104/18/">
+var x = + prompt("请输入x:");
+var y = + prompt("请输入y:");
+if((x>=-1&&x<=1)&&(y>=-1&&y<=1)){
+  console.log("yes");
+}
+else   console.log("no");
+</script>
+
+<script type="x" id="ch0104/19/">
+var n1 = + prompt("请输入数值1:");
+var n2 = + prompt("请输入数值2:");
+var x = + prompt("请输入运算符:");
+var y;
+if(x=="+"){
+  y=n1+n2;
+  console.log(y);
+}
+if(x=="-"){
+  y=n1-n2;
+  console.log(y);
+}
+if(x=="*"){
+  y=n1*n2;
+  console.log(y);
+}
+if(x=="/"){
+  if(n2!=0) y = n1/n2;
+  else console.log("Divided by zero!");
+}
+if(!(x=="+"||x=="-"||x=="*"||x=="/")){
+  console.log("Invalid operator!")
+}
+</script>
+
+<script type="x" id="ch0104/20/">
+var a = + prompt("请输入a:");
+var b = + prompt("请输入b:");
+var c = + prompt("请输入c:");
+var x1,x2;
+if(b==4*a*c){
+  x1=x2=-b/2/a;
+  console.log(x1)
+}
+else if(b>4*a*c){
+     x1 = -b + (Math.sqrt(4*a*c)) / 2 / a;
+     x2 = -b - (Math.sqrt(4*a*c)) / 2 / a;
+  console.log(x1, x2)
+     }
+     else {
+      x1 = (-b) / (2 * a) + '+' +  (Math.sqrt(-4*a*c)) / (2 * a) + 'i';
+      x2 = (-b) / (2 * a) + '+' +  (Math.sqrt(-4*a*c)) / (2 * a) + 'i';
+      console.log(x1, x2)
+     }
+</script>
+
+<script type="x" id="ch0104/21/">
+var n = + prompt("请输入n:");
+var x = + prompt("请输入x:");
+var y = + prompt("请输入y:");
+var eat,s;
+eat=y/x;
+s=Math.trunc(n-eat);
+console.log(s);
+</script>
