@@ -86,10 +86,10 @@
 </script>
 
 <script type="x" id="ch0103/04">
-debugger
+  debugger
   var a = Number(prompt("请输入a的值:"));
   var b = Number(prompt("请输入b的值:"));
-  var quotient = a/b;
+  var quotient =Math.trunc(a/b);
   var mo = a%b;
 if(b==0){
     quotient=null;
@@ -104,24 +104,13 @@ if(b==0){
   debugger
     var a = +prompt("请输入a的值:");
     var b = +prompt("请输入b的值:");
-    var quotient = a/b;
+    var quotient = (a/b).toFixed(9);
   if(b==0){
       quotient=null;
     }
     console.log(quotient);
 
   </script>
-
-  <script type="x" id="ch0103/05">
-      var a = +prompt("请输入a的值:");
-      var b = +prompt("请输入b的值:");
-      var quotient = a/b;
-    if(b==0){
-        quotient=null;
-      }
-      console.log(quotient);
-
-    </script>
 
     <script type="x" id="ch0103/06">
         var a = +prompt("请输入a的值:");
@@ -135,12 +124,13 @@ if(b==0){
       </script>
 
       <script type="x" id="ch0103/07">
+        debugger
         var a = +prompt("请输入a的值:");
         var b = +prompt("请输入b的值:");
         var c = +prompt("请输入c的值:");
         var d = +prompt("请输入d的值:");
         var x = +prompt("请输入x的值:");
-        var f = a*(x**3)+b*(x**2)+c*x+d;
+        var f = (a*(x**3)+b*(x**2)+c*x+d).toFixed(7);
         console.log(f);
       </script>
 
@@ -498,4 +488,384 @@ var eat,s;
 eat=y/x;
 s=Math.trunc(n-eat);
 console.log(s);
+</script>
+
+<script type="x" id="ch0105/01">
+debugger
+var n = Number(prompt("学生人数n的数值:"));
+var sum = 0;
+var i,average;
+for(i=1;i<=n;i++){
+  sum  += Number(prompt("第i个学生的年龄")) ;
+}
+average=(sum/n).toFixed(2);
+console.log(average);
+</script>
+
+<script type="x" id="ch0105/02">
+  debugger
+  var average;
+  var n=12;
+  var i;
+  var sum = 0;
+  for(i=1;i<=n;i++){
+    sum  +=Number(prompt("i月数值:")) ;
+  }
+  average=(sum/n).toFixed(2);
+  console.log(average);
+  </script>
+
+  <script type="x" id="ch0105/03">
+    debugger
+    var n=Number(prompt("请输入数值n"));
+    var i;
+    var sum = 0;
+    for(i=1;i<=n;i++){
+      sum  +=Number(prompt("样本数值:")) ;
+    }
+    average=(sum/n).toFixed(4);
+    console.log(average);
+    </script>
+
+    <script type="x" id="ch0105/04">
+      debugger
+      var n=Number(prompt("请输入整数个数n"));
+      var i,average;
+      var sum = 0;
+      for(i=1;i<=n;i++){
+        sum  +=Number(prompt("样本数值:")) ;
+      }
+      average=(sum/n).toFixed(5);
+      console.log(sum);
+      console.log(average);
+      </script>
+
+<script type="x" id="ch0105/05">
+  debugger
+  var n=Number(prompt("请输入学生个数n"));
+  var i,sore;
+  var a = 0;
+  for(i=1;i<=n;i++){
+    sore = Number(prompt("第"+i+"个学生成绩"))
+    if(a<sore){
+      a=sore;
+    }
+  }
+  console.log(a);
+  </script>
+
+  <script type="x" id="ch0105/06">
+    debugger
+    var n=Number(prompt("请输入长度n"));
+    var length;
+    var max = 0;
+    var min = 1001;
+    for(i=1;i<=n;i++){
+      sore = Number(prompt("第"+i+"个数"))
+      if(max<sore){
+        max=sore;
+      }
+      if (min>sore){
+        min=sore;
+      }
+    }
+    length=max-min;
+    console.log(length);
+    </script>
+
+    <script type="x" id="ch0105/07">
+      debugger
+      var n=Number(prompt("请输入A国参与决赛项目的天数n"));
+      var allsum=0;
+      var goldsum=0;
+      var sliversum=0;
+      var coppersum=0;
+      for(i=1;i<=n;i++){
+        goldsum += Number(prompt("第"+i+"天金牌个数"))
+        sliversum += Number(prompt("第"+i+"天银牌个数"))
+        coppersum +=Number(prompt("第"+i+"天铜牌个数"))
+      }
+      allsum = allsum+goldsum + sliversum +coppersum;
+      console.log(goldsum);
+      console.log(sliversum);
+      console.log(coppersum);
+      console.log(allsum);
+    </script>
+
+<script type="x" id="ch0105/08">
+debugger
+var n=Number(prompt("请输入多边形边数n"));
+var a=(n-2)*180;
+var i;
+for(i=1;i<n;i++){
+  a -=Number(prompt("第"+i+"条边度数"));
+}
+console.log(a);
+</script>
+
+<script type="x" id="ch0105/09">
+  debugger
+  var m = Number(prompt("请输入最大整数m"));
+  var n = Number(prompt("请输入最小整数n"));
+  var i;
+  var sum = 0;
+  for(i=n;i<=m;i++){
+    if(i%2!=0){
+      sum +=i;
+    }
+  }
+  console.log(sum);
+  </script>
+
+<script type="x" id="ch0105/10">
+  debugger
+  var m = Number(prompt("请输入最小整数m"));
+  var n = Number(prompt("请输入最大整数n"));
+  var i;
+  var sum = 0;
+  for(i=m;i<=n;i++){
+    if(i%17==0){
+      sum +=i;
+    }
+  }
+  console.log(sum);
+  </script>
+
+  <script type="x" id="ch0105/11">
+    debugger
+    var k = Number(prompt("请输入正整数k"));
+    var count1=0,count2=0,count3=0,i,num;
+    for(i=1;i<=k;i++){
+      num=Number(prompt("请输入第"+i+"整数"));
+      if(num==1){
+        count1 +=1;
+      }
+      if(num==5){
+        count2 +=1;
+      }
+      if(num==10){
+        count3 +=1;
+      }
+    }
+    console.log(count1);
+    console.log(count2);
+    console.log(count3);
+    </script>
+
+<script type="x" id="ch0105/11">
+debugger
+var N = Number(prompt("请输入表示整数序列的长度(N <= 100)"));
+var m = Number(prompt("请输入表示指定数字m"));
+var a,count=0;
+for(i=1;i<=N;i++){
+  a=Number(prompt("请输入第"+i+"个整数"));
+  if(a==m){
+    count +=1;
+  }
+}
+console.log(count);
+</script>
+
+<script type="x" id="ch0105/13">
+debugger
+var a = Number(prompt("请输入整数a"));
+var n = Number(prompt("请输入乘方正整数n"));
+var num=1;
+for(i=1;i<=n;i++){
+  num *=a;
+}
+console.log(num);
+</script>
+
+<script type="x" id="ch0105/14">
+debugger
+var x = Number(prompt("请输入人口基数整数x"));
+var n = Number(prompt("请输入年数n"));
+var i;
+for(i=1;i<=n;i++){
+  x *=(1+0.0001)
+}
+console.log(Number(x).toFixed(4));
+
+</script>
+
+<script type="x" id="ch0105/15">
+debugger
+  var R = Number(prompt("请输入投资的复合年利率R"));
+  var M = Number(prompt("请输入现有总值为M的钱"));
+  var Y = Number(prompt("请输入投资Y年"));
+  for(i=1;i<=Y;i++){
+     M *=(1+R/100);
+  }
+  console.log(Math.trunc(M));
+</script>
+
+<script type="x" id="ch0105/16">
+debugger
+var N = Number(prompt("请输入年薪N万的值"));
+var K = Number(prompt("请输入房子价格以每年百分之K增长的数值"));
+var money=N;
+var count=1;
+var F=200;
+var i;
+for(i=2;money<F;i++){
+  money +=N;
+  F *=(1+K/100);
+  count +=1;
+}
+console.log(count);
+</script>
+
+<script type="x" id="ch0105/17">
+debugger
+var k = Number(prompt("请输入一个正整数k"));
+var n1 =1;
+var n2 =1;
+var n;
+if(k==1||k==2){
+  console.log("1");
+}
+else {
+  for(i=3;i<=k;i++){
+    n=n1+n2;
+    n1=n2;
+    n2=n;
+  }
+  console.log(n);
+}
+</script>
+
+<script type="x" id="ch0105/18">
+debugger
+var n = Number(prompt("请输入一个正整数n（ 1 < n <= 20）"));
+var y;
+var x;
+n1=Number(prompt("请输入临床实验的总病例数(小于等于10000)"));
+n2=Number(prompt("请输入疗效有效的病例数"));
+x=n2/n1;
+for(i=2;i<=n;i++){
+  n1=Number(prompt("请输入临床实验的总病例数(小于等于10000)"));
+  n2=Number(prompt("请输入疗效有效的病例数"));
+  y=n2/n1;
+  if(y-x>0.05){
+    console.log("better");
+  }
+  else if(x-y>0.05){
+    console.log("worse");
+       }
+       else{
+         console.log("same");
+       }
+
+}
+</script>
+
+<script type="x" id="ch0105/19">
+var n = Number(prompt("请输入表示屋顶数n"));
+var distance;
+var time=0;
+for(i=1;i<=n;i++){
+var x = Number(prompt("请输入表示屋顶位置x坐标"));
+var y = Number(prompt("请输入表示屋顶位置y坐标"));
+var num = Number(prompt("请输入表示该屋顶位置的待救人数"));
+distance =Math.sqrt(x*x+y*y);
+time +=distance*2/50+num*1.5;
+
+}
+console.log(Math.ceil(time));
+</script>
+
+<script type="x" id="ch0105/20">
+var h = Number(prompt("请输入一个整数h，表示球的初始高度"));
+var i,s=h;
+var distance=h;
+for(i=2;i<=10;i++){
+  distance *=0.5;
+  s +=2*distance;
+}
+distance *=0.5;
+console.log(s);
+console.log(distance);
+</script>
+
+<script type="x" id="ch0105/21">
+var N = Number(prompt("请输入一个正整数N"));
+var N1,n,m;
+for(;N!=1;){
+  if(N%2!=0){
+  m=N;
+  N=3*N+1;
+  n=N;
+  console.log(m+"*3+1="+n)
+  }
+   else{
+  m=N;
+  N =N/2;
+  n=N;
+  console.log(m+"/2="+n)
+  }
+}
+</script>
+
+<script type="x" id="ch0105/22">
+debugger
+var N = Number(prompt("请输入一个正整数N"));
+var sum=0;
+var money=0;
+var i,a;
+for(i=1;i<=12;i++){
+  var n = Number(prompt("这个月的预算"));
+  money +=300;
+  if(money<n){
+    console.log("-"+i);
+    a=0;
+  }
+  else {
+    sum +=(Math.trunc((money-n)/100))*100;
+    money =money-n-(Math.trunc((money-n)/100))*100;
+    a=1;
+  }
+}
+if(i==13&&a==1){
+  money=money+sum*1.2;
+  console.log(money);
+}
+</script>
+
+<script type="x" id="ch0105/23">
+debugger
+  var m = Number(prompt("请输入每天开始时的药品总量m"));
+  var n = Number(prompt("请输入这一天取药的人数n（0 < n <= 100）"));
+  var count =0;
+  for(i=1;i<=n;i++){
+    var a = Number(prompt("请输入这一天第"+i+"个病人希望取走的药品数量"));
+    if(m<a){
+      count +=1;
+    }
+    if(m>a){
+      m -=a;
+    }
+
+  }
+  console.log(count);
+</script>
+
+<script type="x" id="ch0105/24">
+  var n = Number(prompt("请输入一个正整数n，n < 100"));
+  var count=0;
+  var max=0;
+  for(i=1;i<=n;i++){
+    var x = Number(prompt("请输入第"+i+"次的收缩压"));
+    var y = Number(prompt("请输入第"+i+"次的舒张压"));
+    if((x>=90&&x<=140)&&(y>=60&&y<=90)){
+      count +=1;
+      if(max<count){
+        max=count;
+      }
+    }
+    else {
+      count -=1;
+    }
+  }
+  console.log(count);
 </script>
