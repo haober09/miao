@@ -53,7 +53,7 @@ var haober09 = {
     }
     return result;//for
   },//drop
-  dropright:function(array,number = 1){
+  dropRight:function(array,number = 1){
     var result = [];
     var l = array.length - number;
     if(l < 0){
