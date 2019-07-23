@@ -53,4 +53,16 @@ var haober09 = {
     }
     return result;//for
   },//drop
+  dropright:function(array,number = 1){
+    var result = [];
+    var l = array.length - number;
+    if(l < 0){
+      return result;
+    }//if1
+    for(var i = 0; i < l;i++){
+      result.push(array[i]);
+    } //for
+    return result;
+  },//dropright
+
 }
